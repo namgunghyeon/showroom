@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+
+  .bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    z-index: -1;
+    opacity: 0;
+
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    transition: opacity 2s;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+
+  .kwh-container {
+    width: 100%;
+    height: 596px;
+    float: right;
+    padding-top: 353px;
+    padding-right: 5.5%;
+    text-align: right;
+    color: #fff;
+
+    .kwh-label {
+      font-size: 2.75em;
+      font-weight: bold;
+      margin-bottom: 17px;
+    }
+
+    .kwh {
+      font-size: 8.5em;
+
+      span {
+        color: #fcee21;
+      }
+    }
+  }
+
+  .point-container {
+    width: 85.5%;
+    height: 484px;
+    float: right;
+    border-top: 2px solid #fff;
+
+    p {
+      width: 22%;
+      height: 50px;
+      color: #fff;
+      font-size: 2.75em;
+
+      &.point-label {
+        margin: 54px 0 27px;
+        font-weight: bold;
+      }
+
+      &.point {
+        margin-bottom: 12px;
+
+
+        span {
+          display: inline-block;
+          float: right;
+        }
+      }
+    }
+
+
+  }
+}
