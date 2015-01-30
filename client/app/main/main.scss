@@ -4,6 +4,8 @@
   position: relative;
 
   .bg-layer {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,11 +64,11 @@
         &.point-label {
           margin: 54px 0 27px;
           font-weight: bold;
-          text-align: right;
+          text-align: left;
         }
 
         &.point {
-          margin-bottom: 12px;
+          margin-bottom: 8px;
 
 
           span {
