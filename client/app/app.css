@@ -1,0 +1,101 @@
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+/**
+ * App-wide Styles
+ */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 14px; }
+
+body {
+  font-family: 'Nanum Gothic', sans-serif; }
+  body p {
+    margin: 0; }
+
+.container {
+  width: 100%;
+  overflow: auto;
+  position: relative; }
+  .container .bg-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    transition: opacity 2s; }
+    .container .bg-layer.active {
+      opacity: 1; }
+  .container .kwh-container {
+    width: 100%;
+    height: 596px;
+    float: right;
+    padding-top: 353px;
+    padding-right: 5.5%;
+    text-align: right;
+    color: #fff; }
+    .container .kwh-container .kwh-label {
+      font-size: 2.75em;
+      font-weight: bold;
+      margin-bottom: 17px; }
+    .container .kwh-container .kwh {
+      font-size: 8.5em; }
+      .container .kwh-container .kwh span {
+        color: #fcee21; }
+  .container .point-container {
+    width: 383px;
+    height: 484px;
+    float: right;
+    border-top: 2px solid #fff; }
+    .container .point-container p {
+      height: 50px;
+      color: #fff;
+      font-size: 2.75em; }
+      .container .point-container p.point-label {
+        margin: 54px 0 27px;
+        font-weight: bold;
+        text-align: left; }
+      .container .point-container p.point {
+        margin-bottom: 8px;
+        width: 383px;
+        padding-right: 50px; }
+        .container .point-container p.point span {
+          display: inline-block;
+          float: right; }
+  .container .bottom-container {
+    width: 100%;
+    overflow: auto;
+    position: relative; }
+  .container .realtime-moment-chart {
+    height: 484px; }
+  .container .realtime-container {
+    width: 67.5%;
+    height: 484px;
+    float: right;
+    border-top: 2px solid #fff; }
+    .container .realtime-container .realtime-card-container {
+      float: left;
+      height: 48%;
+      border-radius: 4px;
+      overflow: auto;
+      position: relative;
+      margin: 54px 120px;
+      width: 83%; }
+
+/*# sourceMappingURL=app.css.map */

@@ -4,6 +4,8 @@
   position: relative;
 
   .bg-layer {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +21,6 @@
       opacity: 1;
     }
   }
-
 
   .kwh-container {
     width: 100%;
@@ -46,35 +47,59 @@
   }
 
   .point-container {
-    width: 85.5%;
+    width: 383px;
     height: 484px;
     float: right;
     border-top: 2px solid #fff;
 
-    .point-sub-container {
-      width: 22%;
+    p {
+      height: 50px;
+      color: #fff;
+      font-size: 2.75em;
 
-      p {
-        height: 50px;
-        color: #fff;
-        font-size: 2.75em;
+      &.point-label {
+        margin: 54px 0 27px;
+        font-weight: bold;
+        text-align: left;
+      }
 
-        &.point-label {
-          margin: 54px 0 27px;
-          font-weight: bold;
-          text-align: right;
-        }
+      &.point {
+        margin-bottom: 8px;
+        width: 383px;
+        padding-right: 50px;
 
-        &.point {
-          margin-bottom: 12px;
-
-
-          span {
-            display: inline-block;
-            float: right;
-          }
+        span {
+          display: inline-block;
+          float: right;
         }
       }
     }
   }
+  
+  .bottom-container {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+  }
+
+  .realtime-moment-chart {
+      height : 484px;
+  }
+
+  .realtime-container {
+    width: 67.5%;
+    height: 484px;
+    float: right;
+    border-top: 2px solid #fff;
+
+    .realtime-card-container{
+          float: left;
+          height: 350px;
+          border-radius: 4px;
+          overflow: auto;
+          position: relative;
+          margin: 54px 120px;
+          width: 83%;
+      }
+    }
 }

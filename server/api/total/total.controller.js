@@ -8,7 +8,7 @@ var connection = mysql.createConnection(env.MYSQL);
 // Get list of totals
 exports.usage = function(req, res) {
 
-  var sql = 'SELECT date, sum(meteringPeriodUsage) as total FROM production.ps_15min_device_usage ' +
+  var sql = 'SELECT date, sum(unitPeriodUsage) as total FROM production.ps_15min_site_usage ' +
             'GROUP BY date ORDER BY date DESC LIMIT 3';
 
   connection.query(sql, function (err, results) {
