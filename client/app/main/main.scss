@@ -51,28 +51,30 @@
     float: right;
     border-top: 2px solid #fff;
 
-    p {
+    .point-sub-container {
       width: 22%;
-      height: 50px;
-      color: #fff;
-      font-size: 2.75em;
 
-      &.point-label {
-        margin: 54px 0 27px;
-        font-weight: bold;
-      }
+      p {
+        height: 50px;
+        color: #fff;
+        font-size: 2.75em;
 
-      &.point {
-        margin-bottom: 12px;
+        &.point-label {
+          margin: 54px 0 27px;
+          font-weight: bold;
+          text-align: right;
+        }
+
+        &.point {
+          margin-bottom: 12px;
 
 
-        span {
-          display: inline-block;
-          float: right;
+          span {
+            display: inline-block;
+            float: right;
+          }
         }
       }
     }
-
-
   }
 }
